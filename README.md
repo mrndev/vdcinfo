@@ -3,7 +3,7 @@ vdcinfo is a helper script to get virtual data center data and parse it to reada
 
 The output format of the APIs is JSON, which is great, but this format is not very grep friendly for quick lookups and troubleshooting.  The trick that the script does is that it replaces the item[0].. json paths with object types (like "datacenter") and names ("Martins datacenter", "MyVM") - whatever you named the objects in the DCD or via the APIS). 
 
-Here is an example - get app ip addresses of my servers
+Here is an example - get IP addresses of my servers
 
     python vdcinfo.py | egrep -i 'ips/'
     datacenter/My test datacenter/entities/servers/server/BootTestServer/entities/nics/nic/Internet/properties/ips/0 = '217.160.xxx.xxx'
