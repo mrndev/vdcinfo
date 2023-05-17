@@ -5,7 +5,7 @@ The output format of the APIs is JSON, which is great, but this format is not ve
 
 Here is an example - get app ip addresses of my servers
 
-    **python vdcinfo.py | egrep -i 'ips/'**
+    python vdcinfo.py | egrep -i 'ips/'
     datacenter/My test datacenter/entities/servers/server/BootTestServer/entities/nics/nic/Internet/properties/ips/0 = '217.160.xxx.xxx'
     datacenter/My test datacenter/entities/lans/lan/Internet/entities/nics/nic/Internet/properties/ips/0 = '217.160.xxx.xxx'
     datacenter/Test 5/entities/servers/server/test5i1/entities/nics/nic/test5i1/properties/ips/0 = '185.132.xxx.xxx'
